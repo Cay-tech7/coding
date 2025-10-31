@@ -28,6 +28,7 @@ contractor_categories = [
     "Backyard project managers"
 ]
 
+
 def search_contractors(query, location="Utah County, Utah"):
     params = {
         "engine": "google",
