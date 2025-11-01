@@ -33,9 +33,7 @@ def drop_student(student_id):
 
 if __name__ == "__main__":
     print(f"Student key ID's: ", students.keys())
-    print_student_info("S001")
-    print()
-    enroll_student("S001", "MATH1210")
-    print()
-    drop_student("S002")
+    print_student_info("S001\n")
+    enroll_student("S001", "MATH1210\n")
+    drop_student("S002\n")
     print(f"Summary\n" , students.items())
