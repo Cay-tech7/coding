@@ -1,6 +1,9 @@
 WOO
+
 Longest line (3491): Dorothy stood up and found she was in her stocking-feet. For the Silver
+
 Average length: 58
+
 [Illustration]
 The Wonderful Wizard of Oz
 by L. Frank Baum
