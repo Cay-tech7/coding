@@ -1,6 +1,6 @@
 # This code processes a lore vault text file, sorts its lines based on numeric identifiers,
 # finds the longest line, calculates the average line length, and writes the results to an output file.
-# I got help from AI to teach me a solution the sort_lines function and to add the .endswith function in the main function.
+# I got help from AI to teach me a solution the sort_lines function and to add the .endswith function in the main function, and to add encoding='utf-8' when opening files. 
 # All comments are my understanding of the code functionality
 
 import os
@@ -8,7 +8,7 @@ import sys
 
 def read_archive(filename):
     parsed_lines = [] #placeholder for parsed lines
-    with open(filename, 'r', encoding='utf-8') as file: #open the file with UTF-8 encoding
+    with open(filename, 'r', encoding='utf-8') as file: #open the file with UTF-8 encoding (I had issues here with special characters, and AI suggested adding encoding='utf-8')
         for line in file: #read each line
             if "|" in line: #check for delimiter
                 content, number = line.rsplit("|", 1) #split line at last delimiter
